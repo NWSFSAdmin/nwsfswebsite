@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="nwsfs">
+<!--http://www.revillweb.com/tutorials/bootstrap-tutorial/ -->
+<head>
+    <meta charset="utf-8">
+    <!-- Set the viewport so this responsive site displays correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NWSFS: Northwest Science Fiction Society</title>
+    <!-- Include bootstrap CSS -->
+    <link href="includes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/style.css" rel="stylesheet">
+	
+</head>
+<body>
+<!-- Site header and navigation -->
+<header class="top" role="header">
+    <div class="container">
+        <a href="#/" class="navbar-brand pull-left">
+            NWSFS
+        </a>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="glyphicon glyphicon-align-justify"></span>
+        </button>
+        <nav class="navbar-collapse collapse" role="navigation">
+            <ul class="navbar-nav nav">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/about">About</a></li>
+                <li><a href="#/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Site banner -->
+<div class="banner">
+    <div class="container">
+    	<h2>Northwest Science Fiction Society</h2>
+        <p>The Seattle-based Northwest Science Fiction Society has been serving the needs of the science fiction 
+        	community in the Pacific Northwest since 1978. Our members can be found in numerous states plus Canada. Though oriented 
+         towards literary forms of science fiction, the interests of our members cover all aspects of the field 
+         and we reflect their diversity. Whether you are a reader, dreamer, media fan, professional 
+        or just like science fiction in all its forms, there is something for you.</p>
+    </div>
+</div>
+<!-- Middle content section -->
+<div class="middle">
+    <div class="container">
+		<div ng-view></div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+        <div class="col-md-3">
+            <h2>Resources</h2>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#/calendar">Calendar</a></li>                
+                <li><a href="#/events">Events</a></li>
+                <li><a href="#/member">Membership</a></li>
+                <li><a href="#/news">News</a></li>                
+                <li>&nbsp;</li>                 
+                <li>&nbsp;</li>
+                <li>&nbsp;</li> 
+                <li>&nbsp;</li> 
+                <li>&nbsp;</li> 
+                <li>&nbsp;</li> 
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Site footer -->
+<div class="bottom">
+    <div class="container">
+        <div class="col-md-4">
+            <h3>Norwescon</h3>
+            <p>NWSFS is closely associated with the Northwest's Premier Science 
+			Fiction Convention: <a href="http://www.norwescon.org">Norwescon</a>.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Philip K. Dick Award</h3>
+            <p>We are a sponsor of the
+			<a href="http://www.philipkdickaward.org/">Philip K. Dick Award</a>.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>&nbsp;</h3>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+</div>
+	<!-- Include jQuery and bootstrap JS plugins -->
+	<script src="includes/jquery/jquery-2.1.4.js"></script>
+	<script src="includes/bootstrap/js/bootstrap.min.js"></script>
+	<script src="includes/angular/angular.js"></script>
+	<script src="includes/angular/angular-route.js"></script>
+	<script src="includes/angular/app.js"></script>
+	<script src="includes/angular/routes.js"></script>	
+	<script src="includes/main.js"></script>	
+
+</body>
+</html>
